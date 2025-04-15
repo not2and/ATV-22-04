@@ -5,7 +5,6 @@ public class Poupanca extends Conta {
     @Override
 
     void imprimirConta() {
-        // TODO Auto-generated method stub
         System.out.println("Numero: " + getNumero());
         System.out.println("Saldo: " + getSaldo());
         System.out.printf("Taxa: %.2f\n", getTaxa());
@@ -14,13 +13,13 @@ public class Poupanca extends Conta {
     }
 
     public Poupanca(String numero, double saldo, double taxa, double juros) {
-        super(numero, saldo, taxa); // Chama o construtor da superclasse
-        this.juros = juros;         // Inicializa o atributo específico da subclasse
+        super(numero, saldo, taxa); 
+        this.juros = juros;         
     }
 
     public Poupanca() {
-        super("", 0.0, 0.0); // Chama o construtor da superclasse com valores padrão
-        this.juros = 0.0;   // Inicializa o atributo específico da subclasse com valor padrão
+        super("", 0.0, 0.0); 
+        this.juros = 0.0;   
     }
 
     public double getJuros() {
